@@ -9,20 +9,20 @@ function App() {
   const [tasks, setTasks] = useState([
     {
       id: 1,
-      text: 'Doctor Appointment',
-      day: 'Feb 5th at 2:30pm',
+      text: 'Study React',
+      day: 'April 8th at 7:30pm',
       reminder: true,
     },
     {
       id: 2,
-      text: 'Metting at School',
-      day: 'Feb 6th at 1:30pm',
+      text: 'Study Node ',
+      day: 'April 9th at 7:30pm',
       reminder: true,
     },
     {
       id: 3,
-      text: 'Food Shopping',
-      day: 'Feb 5th at 2:30pm',
+      text: 'Build an Api',
+      day: 'April 10th at 7:30pm',
       reminder: false,
     },
   ]);
@@ -52,6 +52,7 @@ function App() {
   return (
     <div className="container">
       <Header
+        title="Daniel's Tasks"
         onAdd={() => setShowAddTask(!showAddTask)}
         showAdd={showAddTask}
       />
